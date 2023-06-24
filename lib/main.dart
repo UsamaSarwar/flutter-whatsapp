@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_whatsapp/status.dart';
 
 import 'chat.dart';
 
@@ -20,6 +21,7 @@ class _WhatsAppState extends State<WhatsApp> {
       theme: ThemeData(primarySwatch: Colors.teal),
       home: DefaultTabController(
         length: 3,
+        initialIndex: 1,
         child: Scaffold(
           appBar: AppBar(
             title: const Text('WhatsApp'),
@@ -36,11 +38,25 @@ class _WhatsAppState extends State<WhatsApp> {
                 ),
               ],
             ),
+            actions: [
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(Icons.camera_alt_outlined),
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(Icons.search),
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(Icons.more_vert_rounded),
+              ),
+            ],
           ),
           body: const TabBarView(
             children: [
               Chat(),
-              Chat(),
+              Status(),
               Chat(),
             ],
           ),

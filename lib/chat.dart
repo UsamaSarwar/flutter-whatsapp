@@ -13,7 +13,7 @@ class _ChatState extends State<Chat> {
     return SingleChildScrollView(
       child: Column(
         children: [
-          for (int i = 0; i < 10; i++)
+          for (int i = 100; i < 150; i++)
             ListTile(
               leading: CircleAvatar(
                 backgroundImage:
