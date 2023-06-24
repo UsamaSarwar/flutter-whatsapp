@@ -18,8 +18,8 @@ class _ChatState extends State<Chat> {
               leading: CircleAvatar(
                 backgroundImage:
                     NetworkImage('https://picsum.photos/id/$i/200'),
-              ),
-              title: Text('WhatsApp User $i'),
+              ), 
+              title: Text('User $i'),
               subtitle: const Text('What\'s Up! How is it going?'),
               trailing:  Text('10:$i'),
             ),
