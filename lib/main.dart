@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_whatsapp/calls.dart';
 import 'package:flutter_whatsapp/status.dart';
 
 import 'chat.dart';
@@ -21,7 +22,7 @@ class _WhatsAppState extends State<WhatsApp> {
       theme: ThemeData(primarySwatch: Colors.teal),
       home: DefaultTabController(
         length: 3,
-        initialIndex: 1,
+        initialIndex: 2,
         child: Scaffold(
           appBar: AppBar(
             title: const Text('WhatsApp'),
@@ -57,7 +58,7 @@ class _WhatsAppState extends State<WhatsApp> {
             children: [
               Chat(),
               Status(),
-              Chat(),
+              Calls(),
             ],
           ),
           floatingActionButton: FloatingActionButton(
